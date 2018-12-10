@@ -71,6 +71,8 @@ def plot_labelled_scatter(X, y, class_labels):
     for c in range(0, num_labels):
         h.append(mpatches.Patch(color=color_array[c], label=class_labels[c]))
     plt.legend(handles=h)
+	
+	plt.xlabel('First principal component')
 
     #plt.show()
 

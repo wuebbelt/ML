@@ -67,7 +67,7 @@ def plot_labelled_scatter(X, y, class_labels):
     plt.xlim(x_min, x_max)
     plt.ylim(y_min, y_max)
 
-	plt.xlabel('First principal component')
+    plt.xlabel('First principal component')
 	
     h = []
     for c in range(0, num_labels):

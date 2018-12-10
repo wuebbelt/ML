@@ -67,14 +67,14 @@ def plot_labelled_scatter(X, y, class_labels):
     plt.xlim(x_min, x_max)
     plt.ylim(y_min, y_max)
 
+	plt.xlabel('First principal component')
+	
     h = []
     for c in range(0, num_labels):
         h.append(mpatches.Patch(color=color_array[c], label=class_labels[c]))
     plt.legend(handles=h)
 	
-	plt.xlabel('First principal component')
-
-    #plt.show()
+    plt.show()
 
 
 def plot_class_regions_for_classifier_subplot(clf, X, y, X_test, y_test, title, subplot, target_names = None, plot_decision_regions = True):

@@ -72,7 +72,7 @@ def plot_labelled_scatter(X, y, class_labels):
         h.append(mpatches.Patch(color=color_array[c], label=class_labels[c]))
     plt.legend(handles=h)
 
-    plt.show()
+    #plt.show()
 
 
 def plot_class_regions_for_classifier_subplot(clf, X, y, X_test, y_test, title, subplot, target_names = None, plot_decision_regions = True):
